@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'webappofravi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0E1A22AE21C044A6AE31567AA632D20E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2324FC5164F44ECFA079413AA0D01411 }}
