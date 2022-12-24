@@ -18,22 +18,6 @@
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
 # File: .github/workflows/workflow.yml
 
-on: [push]
-
-name: AzureLoginSample
-
-jobs:
-
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    
-    - uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-    
-    - run: |
-        az webapp list --query "[?state=='Running']"
 name: Build and deploy Python app to Azure Web App
 
 env:
